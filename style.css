@@ -132,13 +132,21 @@ section .title::after {
     font-weight: 600;
 }
 
+.sticky .logo a{
+    color: #fff;
+}
+
+.navbar .logo .sticky a{
+    color: #fff;
+}
+
 .navbar .logo a span {
     color: crimson;
     transition: all 0.3s ease;
 }
 
 .navbar.sticky .logo a span {
-    color: #fff;
+    color: #000;
 }
 
 .navbar.sticky .menu li a {
