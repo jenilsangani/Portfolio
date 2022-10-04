@@ -132,9 +132,9 @@ section .title::after {
     font-weight: 600;
 }
 
-.sticky .logo a{
+/* .sticky .logo a{
     color: #fff;
-}
+} */
 
 .navbar .logo .sticky a{
     color: #fff;
@@ -144,9 +144,13 @@ section .title::after {
     color: crimson;
     transition: all 0.3s ease;
 }
-
+/* 
 .navbar.sticky .logo a span {
     color: #000;
+} */
+
+.navbar.sticky .logo a span {
+    color: #fff;
 }
 
 .navbar.sticky .menu li a {
@@ -766,6 +770,7 @@ footer span a:hover {
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
+        color: #fff;
     }
 
     .home .home-content .text-2 {
