@@ -116,7 +116,7 @@ section .title::after {
     color: #fff;
 }
 
-.navbar.sticky li{
+.navbar.sticky li {
     color: #fff;
 }
 
@@ -140,7 +140,8 @@ section .title::after {
 .navbar.sticky .logo a span {
     color: #fff;
 }
-.navbar.sticky .menu li a{
+
+.navbar.sticky .menu li a {
     color: #fff;
 }
 
@@ -858,5 +859,11 @@ footer span a:hover {
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+
+    .home .home-content .image img {
+        padding-bottom: 50px;
+        /* padding-top: 2px; */
+        margin-top: 0px;
     }
 }
