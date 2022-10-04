@@ -8,6 +8,7 @@
     box-sizing: border-box;
     text-decoration: none;
     /* user-select: none; */
+    transition: all 374ms ease;
 }
 
 html {
@@ -182,7 +183,7 @@ section .title::after {
 /* menu btn styling */
 
 .menu-btn {
-    color: #000;
+    color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -276,6 +277,8 @@ section .title::after {
     font-weight: 500;
     -webkit-text-fill-color: red;
     -webkit-text-stroke-width: 0;
+    /* transition: cubic-bezier(0.6, 0.04, 0.98, 0.335); */
+    /* transition: smooth; */
     /* -webkit-text-stroke-color: red; */
 }
 
