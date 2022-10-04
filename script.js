@@ -69,7 +69,7 @@ $(document).ready(function () {
   });
 
   typed = new Typed(".typing-2", {
-    strings: ["YouTuber", "Developer", , "Designer", "Freelancer"],
+    strings: ["YouTuber", "Developer", "Designer", "Freelancer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
