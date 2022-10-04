@@ -137,7 +137,7 @@ section .title::after {
     color: #fff;
 } */
 
-.navbar .logo .sticky a{
+.navbar .logo .sticky a {
     color: #fff;
 }
 
@@ -145,6 +145,7 @@ section .title::after {
     color: crimson;
     transition: all 0.3s ease;
 }
+
 /* 
 .navbar.sticky .logo a span {
     color: #000;
@@ -586,6 +587,10 @@ section .title::after {
     content: "get in touch";
 }
 
+.contact {
+    padding-top: 0;
+}
+
 .contact .contact-content .column {
     width: calc(50% - 30px);
 }
@@ -729,7 +734,13 @@ footer span a:hover {
 @media (max-width: 853px) {
     .home .home-content {
         display: flex;
-        flex-direction: column-reverse;
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .home .home-content .image {
+        display: grid;
+        justify-content: center;
     }
 }
 
@@ -878,7 +889,7 @@ footer span a:hover {
     }
 
     .home .home-content .image img {
-        padding-bottom: 50px;
+        /* padding-bottom: 50px; */
         /* padding-top: 2px; */
         margin-top: 0px;
     }
