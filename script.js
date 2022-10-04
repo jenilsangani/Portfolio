@@ -3,6 +3,21 @@ const observer = new IntersectionObserver(
   { threshold: [1] }
 );
 
+function afterLoad() {
+  console.log(window.location.host);
+  // if(window.location.host === "jenilsangani.github.io"){
+  let imgs = document.querySelectorAll("img");
+  console.log(imgs.length);
+  console.log(imgs);
+  console.log(Object.keys(imgs));
+  console.log(typeof imgs);
+  Object.keys(imgs).map((key) => {
+    console.log(imgs[key]);
+    console.log(imgs[key].src);
+  });
+  // }
+}
+
 observer.observe(document.querySelector(".navbar"));
 $(document).ready(function () {
   $(window).scroll(function () {
