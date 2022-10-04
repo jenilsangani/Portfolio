@@ -8,7 +8,7 @@
     box-sizing: border-box;
     text-decoration: none;
     /* user-select: none; */
-    transition: all 374ms ease;
+    transition: all 274ms ease;
 }
 
 html {
@@ -754,10 +754,16 @@ footer span a:hover {
     .menu-btn {
         display: block;
         z-index: 999;
+        color: #000;
+    }
+
+    .sticky .menu-btn{
+        color: #fff;
     }
 
     .menu-btn i.active:before {
         content: "\f00d";
+        /* color: #fff; */
     }
 
     .navbar .menu {
