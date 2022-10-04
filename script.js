@@ -4,17 +4,20 @@ const observer = new IntersectionObserver(
 );
 
 function afterLoad() {
-  setImgs()
+  setImgs();
 }
 
 function setImgs() {
-   let host = window.location.host;
-   if (host === "jenilsangani.github.io") {
-     let imgs = document.querySelectorAll("img");
-     Object.keys(imgs).map((key) => {
-       imgs[key].src.replace(host, "jenilsangani.github.io/Portfolio");
-     });
-   }
+  let host = window.location.host;
+  if (host === "jenilsangani.github.io") {
+    let imgs = document.querySelectorAll("img");
+    Object.keys(imgs).map((key) => {
+      imgs[key].src = imgs[key].src.replace(
+        host,
+        "jenilsangani.github.io/Portfolio"
+      );
+    });
+  }
 }
 
 observer.observe(document.querySelector(".navbar"));
