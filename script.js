@@ -17,6 +17,10 @@ function setImgs() {
         "jenilsangani.github.io/Portfolio"
       );
     });
+    let dcv = document.querySelector("#dcv");
+    if (dcv) {
+      dcv.href = dcv.href.replace(host, "jenilsangani.github.io/Portfolio");
+    }
   }
 }
 
