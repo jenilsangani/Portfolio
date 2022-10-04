@@ -247,6 +247,7 @@ section .title::after {
 
 .home .home-content .image img {
     height: 325px;
+    width: 325px;
     align-self: flex-end;
     justify-self: end;
 }
@@ -731,7 +732,7 @@ footer span a:hover {
 }
 
 /* @media (max-width: 852px) { */
-    
+
 @media (max-width: 853px) {
     .home .home-content {
         display: flex;
