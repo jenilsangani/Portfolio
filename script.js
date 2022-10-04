@@ -4,21 +4,17 @@ const observer = new IntersectionObserver(
 );
 
 function afterLoad() {
-  console.log(window.location.host);
-  if(window.location.host === "jenilsangani.github.io"){
-  let imgs = document.querySelectorAll("img");
-  console.log(imgs.length);
-  console.log(imgs);
-  console.log(Object.keys(imgs));
-  console.log(typeof imgs);
-  Object.keys(imgs).map((key) => {
-    let newUrl = imgs[key].src
-      .toString()
-      .replace(window.location.host, "jenilsangani.github.io/Portfolio");
-    imgs[key].src = newUrl;
-  });
- 
-  }
+  setImgs()
+}
+
+function setImgs() {
+   let host = window.location.host;
+   if (host === "jenilsangani.github.io") {
+     let imgs = document.querySelectorAll("img");
+     Object.keys(imgs).map((key) => {
+       imgs[key].src.replace(host, "jenilsangani.github.io/Portfolio");
+     });
+   }
 }
 
 observer.observe(document.querySelector(".navbar"));
