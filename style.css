@@ -741,6 +741,7 @@ footer span a:hover {
     .home .home-content .image {
         display: grid;
         justify-content: center;
+        padding-left: 30px;
     }
 }
 
